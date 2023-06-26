@@ -4,15 +4,23 @@
 % close all
 
 %% ** set up data ** 
-addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_data');
-addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_tracking_analytics_vms/analytic_data');
-addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_tracking_analytics_vms/v09_modelDiagnostics');
-addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_trackingOutput/VMS/v09_3percent_vms');
+% addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_data');
+% addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_tracking_analytics_vms/analytic_data');
+% addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_tracking_analytics_vms/v09_modelDiagnostics');
+% addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_trackingOutput/VMS/v09_3percent_vms');
+addpath('westcoms_data');
+addpath('westcoms_tracking_analytics_vms/analytic_data');
+addpath('westcoms_tracking_analytics_vms/v09_modelDiagnostics');
+addpath('westcoms_trackingOutput/VMS/v09_3percent_vms');
+
 
 % load mesh 
 load westcoms2_mesh
-folder_dir = ('E:/2020_particle_track_models/2021_WestComs_na/westcoms_trackingOutput/VMS/v09_3percent_vms/'); 
-input_folder_dir = ('E:/2020_particle_track_models/2021_WestComs_na/westcoms_trackingOutput/VMS/v09_3percent_vms');
+% folder_dir = ('E:/2020_particle_track_models/2021_WestComs_na/westcoms_trackingOutput/VMS/v09_3percent_vms/'); 
+% input_folder_dir = ('E:/2020_particle_track_models/2021_WestComs_na/westcoms_trackingOutput/VMS/v09_3percent_vms');
+folder_dir = ('westcoms_trackingOutput/VMS/v09_3percent_vms/'); 
+input_folder_dir = ('westcoms_trackingOutput/VMS/v09_3percent_vms');
+
 
 % do for jan only
 % folder_dir = ('E:/2020_particle_track_models/2021_WestComs_na/cluster_output/01_ModelRuns_ClydePaper/v09_02_3percent_jan/'); 

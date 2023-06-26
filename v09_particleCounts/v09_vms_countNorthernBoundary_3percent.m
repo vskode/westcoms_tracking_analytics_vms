@@ -8,10 +8,15 @@
 close all
 clear 
 
-addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_data');
-addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_tracking_analytics_vms/analytic_data');
-addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_tracking_analytics_vms/v09_modelDiagnostics');
-addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_trackingOutput/VMS/v09_3percent_vms');
+% addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_data');
+% addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_tracking_analytics_vms/analytic_data');
+% addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_tracking_analytics_vms/v09_modelDiagnostics');
+% addpath('E:/2020_particle_track_models/2021_WestComs_na/westcoms_trackingOutput/VMS/v09_3percent_vms');
+addpath('westcoms_data');
+addpath('westcoms_tracking_analytics_vms/analytic_data');
+addpath('westcoms_tracking_analytics_vms/v09_modelDiagnostics');
+addpath('westcoms_trackingOutput/VMS/v09_3percent_vms');
+
 
 % load beached particle positions 
 v09_vms_3percent_modelDiagnostics
@@ -19,7 +24,9 @@ v09_vms_3percent_modelDiagnostics
 %load polygons 
 polygons_northernBoundary
 
-westcoast = load('E:\2020_particle_track_models\2021_WestComs_na\westcoms_data\ukireland_coastline.NaN.dat');
+% westcoast = load('E:\2020_particle_track_models\2021_WestComs_na\westcoms_data\ukireland_coastline.NaN.dat');
+westcoast = load('ukireland_coastline.NaN.dat');
+
 l = find(isnan(westcoast(:,1)));
 
 lonlim = [-10 -4];
